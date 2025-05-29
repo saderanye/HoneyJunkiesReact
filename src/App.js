@@ -1,12 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
+
 function App() {
   return (
     <div className="App">
 
       {/* Header with navigation */}
       <header>
+        <div className='logo'>
+          <img src='/logo.png' alt='Honey Junkies Logo' style={{height: '100px'}}/>
+        </div>
         <nav>
           <ul>
             <li><a href='#home'>Home</a></li>
