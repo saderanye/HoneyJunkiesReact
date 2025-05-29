@@ -3,6 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert('Thank you for your message!');
+  };
+
+
   return (
     <div>
 
@@ -40,8 +46,8 @@ function App() {
       <section id="home" className="container py-5 text-center">
         <h1 className="display-4 mb-3">Welcome to Honey Junkies</h1>
         <p className="lead">Your one-stop shop for all things honey and bee-related!</p>
-        <div>
-          <img src='\HoneyJunkiesWindow-Q5.jpg' alt='Logo on a Window' style={{ width: '500px', height: 'auto' }} />
+        <div className='text-center'>
+          <img src='/HoneyJunkiesJarsSide.jpg' alt='Logo on a Window' style={{ width: '600px', height: 'auto' }} />
         </div>
         <button className="btn btn-warning mt-3">Shop Now</button>
       </section>
@@ -49,6 +55,10 @@ function App() {
       {/* ABOUT SECTION */}
       <section id="about" className="container py-5">
         <h2 className="text-center mb-4">About Honey Junkies</h2>
+        <div className='text-center'>
+          <img src='/beeKeepers.jpg' alt='Beekeepers' style={{ width: '500px', height: 'auto' }} />
+
+        </div>
         <p className="text-center">
           At Honey Junkies, we are passionate about delivering the finest honey products
           sourced directly from sustainable bee farms. Our mission is to bring nature’s
@@ -63,7 +73,7 @@ function App() {
           {/* Example product card 1 */}
           <div className="col-md-4 mb-4">
             <div className="card h-100">
-              <img src="/honey1.jpg" className="card-img-top" alt="Honey Jar" />
+              <img src="/bee.jpg" className="card-img-top" alt="Honey Jar" />
               <div className="card-body">
                 <h5 className="card-title">Raw Organic Honey</h5>
                 <p className="card-text">Delicious, unfiltered, and straight from the hive.</p>
@@ -75,7 +85,7 @@ function App() {
           {/* Example product card 2 */}
           <div className="col-md-4 mb-4">
             <div className="card h-100">
-              <img src="/honey2.jpg" className="card-img-top" alt="Honey Comb" />
+              <img src="/HoneyJunkies-CardboardBox-Q4.jpg" className="card-img-top" alt="Honey Comb" />
               <div className="card-body">
                 <h5 className="card-title">Honeycomb Squares</h5>
                 <p className="card-text">Perfect for snacking or adding to your favorite dish.</p>
@@ -87,7 +97,7 @@ function App() {
           {/* Example product card 3 */}
           <div className="col-md-4 mb-4">
             <div className="card h-100">
-              <img src="/honey3.jpg" className="card-img-top" alt="Infused Honey" />
+              <img src="/golden.jpg" className="card-img-top" alt="Infused Honey" />
               <div className="card-body">
                 <h5 className="card-title">Infused Honey Blends</h5>
                 <p className="card-text">Unique flavors like lavender, chili, and lemon zest.</p>
@@ -101,7 +111,7 @@ function App() {
       {/* CONTACT SECTION */}
       <section id="contact" className="container py-5">
         <h2 className="text-center mb-4">Contact Us</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">Name</label>
             <input type="text" className="form-control" id="name" required />
@@ -116,6 +126,9 @@ function App() {
           </div>
           <button type="submit" className="btn btn-warning">Send Message</button>
         </form>
+
+
+
       </section>
 
       {/* FOOTER*/}
