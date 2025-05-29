@@ -107,7 +107,7 @@ function App() {
         </form>
       </section>
 
-      {/* FOOTER (Optional) */}
+      {/* FOOTER*/}
       <footer className="bg-dark text-white text-center py-3">
         &copy; {new Date().getFullYear()} Honey Junkies. All rights reserved.
       </footer>
