@@ -5,33 +5,44 @@ import './App.css';
 function App() {
   return (
     <div>
+
       {/* HEADER */}
       <header className="bg-warning py-3 sticky-top">
         <div className="container d-flex justify-content-between align-items-center">
           <img src="/logo.png" alt="Honey Junkies Logo" style={{ height: '100px' }} />
-          <nav>
-            <ul className="nav">
-              <li className="nav-item">
-                <a className="nav-link text-dark fw-bold" href="#home">Home</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-dark fw-bold" href="#about">About</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-dark fw-bold" href="#shop">Shop</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-dark fw-bold" href="#contact">Contact</a>
-              </li>
-            </ul>
+          <nav className="navbar navbar-expand-md navbar-light">
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+
+            <div className="collapse navbar-collapse" id="navbarsExample04">
+              <ul className="navbar-nav ms-auto">
+                <li className="nav-item active">
+                  <a className="nav-link" href="#home">Home</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#about">About</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#shop">Shop</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
       </header>
+
 
       {/* HOME SECTION */}
       <section id="home" className="container py-5 text-center">
         <h1 className="display-4 mb-3">Welcome to Honey Junkies</h1>
         <p className="lead">Your one-stop shop for all things honey and bee-related!</p>
+        <div>
+          <img src='\HoneyJunkiesWindow-Q5.jpg' alt='Logo on a Window' style={{ width: '500px', height: 'auto' }} />
+        </div>
         <button className="btn btn-warning mt-3">Shop Now</button>
       </section>
 
