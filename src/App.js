@@ -46,9 +46,10 @@ function App() {
       <section id="home" className="container py-4 text-center">
         <h1 className="display-4 mb-3">Welcome to Honey Junkies</h1>
         <p className="lead">Your one-stop shop for all things honey and bee-related!</p>
-        <div className='text-center'>
-          <img src='/HoneyJunkiesJarsSide.jpg' alt='Logo on a Window' style={{ width: '600px', height: 'auto' }} />
-        </div>
+<div className="text-center">
+  <img src="/HoneyJunkiesJarsSide.jpg" alt="Logo on a Window" className="img-fluid" style={{ maxWidth: '600px' }} />
+</div>
+
         <button className="btn btn-warning mt-3" onClick={() => window.location.href = '#shop'}>Shop Now</button>
       </section>
 
@@ -64,7 +65,7 @@ function App() {
       <img src="/beeFlower.jpg" className="d-block w-100" alt="Bee Flowers" />
     </div>
     <div className="carousel-item">
-      <img src="/beesTwo.jpg" className="d-block w-100" alt="Bees Two" />
+      <img src="/beesTwo.jpg" className="d-block w-100" alt="Bees" />
     </div>
   </div>
 
